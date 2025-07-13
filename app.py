@@ -123,9 +123,9 @@ def train_show_results(X, Y, model, split_share = 0.2):
     preds = m.predict(X_test)
     mse = mean_squared_error(Y_test, preds)
     return Y_test,preds
-    #acc = accuracy_score(Y_test,preds)
     
-    return Y_test,preds
+    
+    
 
 def reg(model_name = LinearRegression()):
     Y_test,preds = train_show_results(X,Y,model_name)
